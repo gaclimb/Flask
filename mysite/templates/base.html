@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}父模板title{% endblock %}</title>
+    <style>
+        #header{
+            height: 50px;
+            background-color: bisque;
+        }
+        #header ul{
+            list-style: none;
+            height: 50px;
+        }
+        #header ul li{
+            display: block;
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            font-size: 20px;
+
+        }
+        #main{
+            height: 900px;
+            background-color: deeppink;
+            text-align: center;
+        }
+        #footer{
+            height: 100px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+{% block mycss %}
+{% endblock %}
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li>首页</li>
+            <li>秒杀</li>
+            <li>超市</li>
+            <li>图书</li>
+            <li>会员</li>
+        </ul>
+    </div>
+    <div id="main">
+        {% block main %}
+        <h1>我是中间部分</h1>
+        {% endblock %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+        <h1>我是底部</h1>
+        {% endblock %}
+    </div>
+
+</body>
+</html>

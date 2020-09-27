@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        div{
+            width: 500px;
+            height: 250px;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        span{
+            display: inline-block;
+            width: 80px;
+        }
+        textarea{
+            width: 494px;
+            height: 279px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>用户注册</h1>
+        <form action="/register" method="POST">
+            <p><span>用户名：</span><input type="text", name="username", placeholder="请输入用户名"></p>
+            <p><span>密码：</span><input type="password", name="password", placeholder="请输入密码"></p>
+            <p><span>确认密码：</span><input type="password", placeholder="请确认密码"></p>
+            <!-- <p><textarea name="" id="xinxi" cols="30" rows="10"></textarea></p> -->
+            <p><input type="submit", value="注册" >&nbsp;<input type="reset", value="重置"></p>
+            <!-- <p><textarea name="text" id="" cols="50" rows="10"></textarea></p> -->
+            
+        </form>
+    </div>
+    
+</body>
+</html>
